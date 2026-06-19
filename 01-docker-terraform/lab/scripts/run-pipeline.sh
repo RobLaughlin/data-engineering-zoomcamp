@@ -1,1 +1,0 @@
-uv run scripts/pipeline.py 10
