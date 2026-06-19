@@ -1,11 +1,17 @@
 #!/usr/bin/env bash
 set -e
 
-echo "--PYTHON VERSION--"
-python -V
-
+echo "--PYTHON INFO--"
+uv run which python
+uv run python -V
 echo ""
-python pipeline.py "$@"
+
+echo "--UV INFO--"
+which uv
+uv version
+echo ""
+
+uv run python pipeline.py "$@"
 echo ""
 
 echo "--OUTPUTS DIR CONTENTS--"
