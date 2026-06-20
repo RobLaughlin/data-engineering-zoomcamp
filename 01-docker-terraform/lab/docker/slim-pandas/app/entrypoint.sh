@@ -16,3 +16,6 @@ echo ""
 
 echo "--OUTPUTS DIR CONTENTS--"
 ls outputs/
+
+uv sync
+exec bash --rcfile .venv/bin/activate -i
