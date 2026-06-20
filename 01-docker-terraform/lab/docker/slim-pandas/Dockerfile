@@ -13,9 +13,9 @@ COPY "pyproject.toml" "uv.lock" ".python-version" ./
 # Install dependencies from lock file (ensures reproducible builds)
 RUN uv sync --locked
 
-COPY app/pipeline.py pipeline.py
+COPY docker/slim-pandas/app/pipeline.py pipeline.py
 
-COPY app/entrypoint.sh entrypoint.sh
+COPY docker/slim-pandas/app/entrypoint.sh entrypoint.sh
 RUN chmod +x entrypoint.sh
 
 # Make outputs directory

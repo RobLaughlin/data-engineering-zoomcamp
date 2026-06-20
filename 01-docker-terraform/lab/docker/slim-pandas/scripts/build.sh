@@ -1,4 +1,10 @@
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+#!/usr/bin/env bash
+set -e
 
-docker build -t test:pandas "$PROJECT_DIR"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+LAB_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
+
+docker build \
+  -f "$LAB_DIR/docker/slim-pandas/Dockerfile" \
+  -t test:pandas \
+  "$LAB_DIR"
