@@ -10,6 +10,9 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.0",
     "pgcli>=4.5.0",
     "psycopg-binary>=3.3.4",
+    "skimpy>=0.0.21",
 ]
