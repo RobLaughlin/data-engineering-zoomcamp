@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+set -e
+
 docker run -it --rm \
   -e POSTGRES_USER="root" \
   -e POSTGRES_PASSWORD="root" \
