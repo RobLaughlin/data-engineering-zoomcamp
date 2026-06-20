@@ -1,1 +1,1 @@
-uv run pgcli -h localhost -p 5432 -u root -d ny_taxi
+uv run pgcli -h localhost -p 5432 -U root -d ny_taxi
