@@ -1,0 +1,1 @@
+docker compose -f docker/database/docker-compose.yml up
