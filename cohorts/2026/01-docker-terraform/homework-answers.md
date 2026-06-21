@@ -97,6 +97,8 @@ For the trips in November 2025 (lpep_pickup_datetime between '2025-11-01' and '2
 - 8,254
 - 8,421
 
+**A**: 8,007. Run .read sql/queries/count_short_trips.sql
+
 ## Question 4. Longest trip for each day
 
 Which was the pick up day with the longest trip distance? Only consider trips with `trip_distance` less than 100 miles (to exclude data errors).
@@ -108,6 +110,8 @@ Use the pick up time for your calculations.
 - 2025-11-23
 - 2025-11-25
 
+**A**: 2025-11-14 15:36:27. Run .read sql/queries/count_longest_trip_lt_100.sql
+
 ## Question 5. Biggest pickup zone
 
 Which was the pickup zone with the largest `total_amount` (sum of all trips) on November 18th, 2025?
@@ -116,6 +120,8 @@ Which was the pickup zone with the largest `total_amount` (sum of all trips) on 
 - East Harlem South
 - Morningside Heights
 - Forest Hills
+
+**A**: East Harlem North. Run .read sql/queries/biggest_pickup_zone.sql
 
 ## Question 6. Largest tip
 
@@ -127,6 +133,8 @@ Note: it's `tip` , not `trip`. We need the name of the zone, not the ID.
 - Yorkville West
 - East Harlem North
 - LaGuardia Airport
+
+**A**: Yorkville West. Run .read sql/queries/east_harlem_north_largest_tip_nov_2025.sql
 
 ## Terraform
 
