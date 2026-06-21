@@ -23,6 +23,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "duckdb" },
     { name = "jupyter" },
     { name = "matplotlib" },
     { name = "pgcli" },
@@ -42,6 +43,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "duckdb", specifier = ">=1.5.4" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.11.0" },
     { name = "pgcli", specifier = ">=4.5.0" },
